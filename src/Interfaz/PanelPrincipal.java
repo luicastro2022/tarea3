@@ -8,7 +8,7 @@ public class PanelPrincipal extends JFrame{
         this.setLayout(new BorderLayout());
         this.setTitle("Ventana Principal");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        
+        this.getContentPane().setBackground(Color.CYAN);
 
         this.setSize(800,600);
         this.setVisible(true);
