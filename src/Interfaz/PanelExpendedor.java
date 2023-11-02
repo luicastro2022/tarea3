@@ -1,5 +1,6 @@
 package Interfaz;
 
+import Codigo.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -13,17 +14,17 @@ import java.awt.event.MouseListener;
 
 public class PanelExpendedor extends JPanel{
 
-
+    int seleccion;
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
+        cocacola.addMouseListener(new escucharmouse());
 
         JButton snicker = new JButton("Snicker");
         this.add(snicker);
-        snicker.addMouseListener(new escucharmouse());
 
         JButton sprite = new JButton("Sprite");
         this.add(sprite);
@@ -40,10 +41,12 @@ public class PanelExpendedor extends JPanel{
     }
 
     private class escucharmouse implements MouseListener{
+        public void escucharmouse(String nombre){
 
+        }
         @Override
         public void mouseClicked(MouseEvent e) {
-            System.out.println("hola");
+            seleccion=1;
 
         }
 
@@ -61,5 +64,9 @@ public class PanelExpendedor extends JPanel{
         public void mouseEntered(MouseEvent e) {}
         @Override
         public void mouseExited(MouseEvent e) {}
+    }
+
+    public int getSeleccion(){
+        return seleccion;
     }
 }

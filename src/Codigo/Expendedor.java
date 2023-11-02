@@ -3,7 +3,7 @@ package Codigo;
 /**
  * Un expendedor que  ofrece los productos al cliente
  */
-class Expendedor {
+public class Expendedor {
     /**
      * Valores para seleccionar los productos
      */

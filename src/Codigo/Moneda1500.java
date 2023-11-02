@@ -1,7 +1,7 @@
 package Codigo;
 
 /**Monedas con valor de 1500*/
-class Moneda1500 extends Moneda{
+public class Moneda1500 extends Moneda{
     /**Constructor por defecto de Moneda1500*/
     public Moneda1500(){
         super();
