@@ -2,6 +2,12 @@ package Interfaz;
 import java.awt.*;
 import javax.swing.*;
 
+/**
+ * Clase que contiene a todos los otros paneles
+ * c= panel Compraador
+ * e= panel Expendedor
+ */
+
 public class PanelPrincipal extends JFrame{
     private PanelComprador c;
     private PanelExpendedor e;

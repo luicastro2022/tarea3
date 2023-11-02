@@ -5,6 +5,13 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * Panel que representa al comprador en el gui tiene 2 botones
+ * Comprar que devuelve el producto comprado (Bebida/Dulce) solo si hay disponibilidad
+ * Vuelto que devuelve las monedas correspondientes al vuelto de la compra, si esta fue ejecutada correctamente
+ *
+ */
+
 public class PanelComprador extends JPanel{
 
     public PanelComprador(){

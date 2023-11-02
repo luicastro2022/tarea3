@@ -5,6 +5,12 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * Panel que representa al Expendedor en la interfaz
+ * Contiene 5 Botones que representan los productos
+ * El ultimo espacio del grid esta reservado para mostrar la seleccion actual
+ */
+
 public class PanelExpendedor extends JPanel{
 
 
