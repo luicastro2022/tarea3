@@ -2,6 +2,8 @@ package Interfaz;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class PanelComprador extends JPanel{
     public PanelComprador(){
@@ -9,11 +11,40 @@ public class PanelComprador extends JPanel{
         this.setLayout(new GridLayout(1,2));
         this.setSize(10,10);
 
-        JButton comprar =new JButton("comprar");
+        JButton comprar = new JButton("comprar");
         this.add(comprar);
+        comprar.addMouseListener(new escucharmouse());
 
-        this.add(new JButton("Sacar moneda"));
+        JButton Vuelto = new JButton("Sacar vuelto");
+        this.add(Vuelto);
+        Vuelto.addMouseListener(new escucharmouse());
+    }
 
+    private class escucharmouse implements MouseListener{
+        @Override
+        public void mouseClicked(MouseEvent e) {
 
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            System.out.println("press");
+
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+
+        }
     }
 }
