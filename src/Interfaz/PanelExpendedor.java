@@ -4,8 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
 public class PanelExpendedor extends JPanel{
-    
+
+
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
@@ -15,15 +17,17 @@ public class PanelExpendedor extends JPanel{
 
         JButton snicker = new JButton("Snicker");
         this.add(snicker);
+        snicker.addMouseListener(new escucharmouse());
+
         JButton sprite = new JButton("Sprite");
         this.add(sprite);
+
         JButton super8 = new JButton("Super 8");
         this.add(super8);
+
         JButton fanta = new JButton("Fanta");
         this.add(fanta);
 
-
-        this.addMouseListener(new escucharmouse());
 
         this.setSize(800, 600);
 
@@ -48,13 +52,8 @@ public class PanelExpendedor extends JPanel{
         }
 
         @Override
-        public void mouseEntered(MouseEvent e) {
-
-        }
-
+        public void mouseEntered(MouseEvent e) {}
         @Override
-        public void mouseExited(MouseEvent e) {
-
-        }
+        public void mouseExited(MouseEvent e) {}
     }
 }

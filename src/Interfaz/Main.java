@@ -1,5 +1,4 @@
 package Interfaz;
-
 import javax.swing.*;
 
 public class Main{
@@ -7,6 +6,8 @@ public class Main{
         PanelComprador n =new PanelComprador();
         PanelExpendedor e=new PanelExpendedor();
         PanelPrincipal p =new PanelPrincipal(n,e);
+
+
 
 
     }

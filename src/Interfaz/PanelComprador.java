@@ -6,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class PanelComprador extends JPanel{
+
     public PanelComprador(){
         super();
         this.setLayout(new GridLayout(1,2));
@@ -28,7 +29,7 @@ public class PanelComprador extends JPanel{
 
         @Override
         public void mousePressed(MouseEvent e) {
-            System.out.println("press");
+
 
         }
 
