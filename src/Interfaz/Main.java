@@ -19,9 +19,11 @@ public class Main{
         int seleccion=e1.getSeleccion();
 
 
+        System.out.println(d.getSonidob());
 
 
-        Comprador d = new Comprador(m, seleccion, e);
+
+
 
 
 

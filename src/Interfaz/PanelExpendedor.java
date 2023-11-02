@@ -14,7 +14,7 @@ import java.awt.event.MouseListener;
 
 public class PanelExpendedor extends JPanel{
 
-    int seleccion;
+    int seleccion=1;
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
