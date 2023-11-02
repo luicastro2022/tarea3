@@ -9,7 +9,11 @@ public class PanelComprador extends JPanel{
         this.setLayout(new GridLayout(1,2));
         this.setSize(10,10);
 
-        this.add(new JButton("comprar"));
+        JButton comprar =new JButton("comprar");
+        this.add(comprar);
+
         this.add(new JButton("Sacar moneda"));
+
+
     }
 }

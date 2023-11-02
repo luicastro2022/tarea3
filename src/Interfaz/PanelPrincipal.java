@@ -3,16 +3,15 @@ import java.awt.*;
 import javax.swing.*;
 
 public class PanelPrincipal extends JFrame{
-    private PanelComprador n;
-    public PanelPrincipal(PanelComprador n){
+    private PanelComprador c;
+    public PanelPrincipal(PanelComprador c){
         super();
-        this.n=n;
+        this.c=c;
         this.setLayout(new GridLayout(2,2));
         this.setTitle("Ventana Principal");
         this.getContentPane().setBackground(Color.CYAN);
 
-        
-        this.add(n);
+        this.add(c);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(800,600);
