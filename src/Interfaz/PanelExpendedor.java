@@ -21,52 +21,29 @@ public class PanelExpendedor extends JPanel{
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
-        cocacola.addMouseListener(new escucharmouse());
-
-        JButton snicker = new JButton("Snicker");
-        this.add(snicker);
+        cocacola.addMouseListener(new EscucharCocacola());
 
         JButton sprite = new JButton("Sprite");
         this.add(sprite);
-
-        JButton super8 = new JButton("Super 8");
-        this.add(super8);
+        sprite.addMouseListener(new EscucharSprite());
 
         JButton fanta = new JButton("Fanta");
         this.add(fanta);
+        fanta.addMouseListener(new EscucharFanta());
+
+        JButton snicker = new JButton("Snicker");
+        this.add(snicker);
+        snicker.addMouseListener(new EscucharSnicker());
+
+        JButton super8 = new JButton("Super 8");
+        this.add(super8);
+        super8.addMouseListener(new EscucharSuper8());
 
 
         this.setSize(800, 600);
-
     }
 
-    private class escucharmouse implements MouseListener{
-        public void escucharmouse(String nombre){
-
-        }
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            seleccion=1;
-
-        }
-
-        @Override
-        public void mousePressed(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {}
-        @Override
-        public void mouseExited(MouseEvent e) {}
-    }
-
-    public int getSeleccion(){
+    public int getSeleccion() {
         return seleccion;
     }
 }
