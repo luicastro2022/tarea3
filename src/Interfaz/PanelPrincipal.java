@@ -3,14 +3,21 @@ import java.awt.*;
 import javax.swing.*;
 
 public class PanelPrincipal extends JFrame{
-    public PanelPrincipal(){
+    private PanelComprador n;
+    public PanelPrincipal(PanelComprador n){
         super();
-        this.setLayout(new BorderLayout());
+        this.n=n;
+        this.setLayout(new GridLayout(2,2));
         this.setTitle("Ventana Principal");
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.getContentPane().setBackground(Color.CYAN);
 
+        
+        this.add(n);
+
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(800,600);
         this.setVisible(true);
+
+
     }
 }
