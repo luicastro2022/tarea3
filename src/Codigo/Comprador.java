@@ -42,6 +42,12 @@ public class Comprador{
 
     }
 
+
+
+
+
+
+
     /**
      *
      * @return devuelve el calculo del vuelto

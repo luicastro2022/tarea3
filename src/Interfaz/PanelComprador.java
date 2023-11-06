@@ -1,5 +1,6 @@
 package Interfaz;
 
+import Codigo.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -18,10 +19,14 @@ public class PanelComprador extends JPanel{
         super();
         this.setLayout(new GridLayout(1,2));
 
-
         JButton comprar = new JButton("comprar");
         this.add(comprar);
-        comprar.addMouseListener(new escucharmouse());
+        comprar.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+        });
 
         JButton Vuelto = new JButton("Sacar vuelto");
         this.add(Vuelto);
