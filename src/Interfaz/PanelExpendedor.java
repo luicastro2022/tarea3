@@ -12,13 +12,12 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelExpendedor extends JPanel{
-
     int seleccion=1;
 
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
-
+        JTextField opcion=new JTextField(" ");
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
@@ -26,7 +25,7 @@ public class PanelExpendedor extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 seleccion=1;
-                System.out.println(seleccion);
+                opcion.setText("Cocacola");
             }
         });
 
@@ -37,7 +36,7 @@ public class PanelExpendedor extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 seleccion=2;
-                System.out.println(seleccion);
+                opcion.setText("Sprite");
             }
         });
 
@@ -47,7 +46,7 @@ public class PanelExpendedor extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 seleccion=3;
-                System.out.println(seleccion);
+                opcion.setText("Fanta");
             }
         });
 
@@ -57,7 +56,8 @@ public class PanelExpendedor extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 seleccion=4;
-                System.out.println(seleccion);
+                opcion.setText("Snicker");
+
             }
         });
 
@@ -67,11 +67,12 @@ public class PanelExpendedor extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 seleccion=5;
-                System.out.println(seleccion);
+                opcion.setText("Super8");
             }
         });
 
 
+        this.add(opcion);
         this.setSize(800, 600);
     }
 
