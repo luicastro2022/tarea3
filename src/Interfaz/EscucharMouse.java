@@ -5,11 +5,6 @@ import java.awt.event.MouseListener;
 
 abstract public class EscucharMouse implements MouseListener {
 
-    int index;
-    public void escucharmouse(int index){
-        this.index=index;
-    }
-
     @Override
     public void mouseClicked(MouseEvent e) {
 

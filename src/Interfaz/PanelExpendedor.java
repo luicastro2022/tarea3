@@ -15,6 +15,7 @@ import java.awt.event.MouseListener;
 public class PanelExpendedor extends JPanel{
 
     int seleccion=1;
+
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
@@ -22,6 +23,7 @@ public class PanelExpendedor extends JPanel{
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
         cocacola.addMouseListener(new EscucharCocacola());
+
 
         JButton sprite = new JButton("Sprite");
         this.add(sprite);
