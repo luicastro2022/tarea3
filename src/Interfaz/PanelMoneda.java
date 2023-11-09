@@ -12,27 +12,54 @@ import Codigo.*;
  * Contiene 4 botones de selección exclusiva para comprar en el Expendedor
  */
 public class PanelMoneda extends JPanel {
-
-
+    private Moneda ms;
     public PanelMoneda() {
         super();
         this.setLayout(new GridLayout(2, 2));
 
         JRadioButton moneda100= createRadioButton("100pesos.png", "100");
+        moneda100.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ms=new Moneda100();
+            }
+        });
         JRadioButton moneda500= createRadioButton("500pesos.png", "500");
+        moneda500.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ms=new Moneda500();
+            }
+        });
         JRadioButton moneda1000= createRadioButton("1000pesos.jpg", "1000");
+        moneda1000.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ms=new Moneda1000();
+            }
+        });
         JRadioButton moneda1500= createRadioButton("1500pesos.jpg", "1500");
+        moneda1500.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                ms=new Moneda1500();
+            }
+        });
+
         ButtonGroup grupo= new ButtonGroup();
+
         this.add(moneda100);
         this.add(moneda500);
         this.add(moneda1000);
         this.add(moneda1500);
+        
         grupo.add(moneda100);
         grupo.add(moneda500);
         grupo.add(moneda1000);
         grupo.add(moneda1500);
 
     }
+
 
     protected static ImageIcon createImageIcon(String path) {
         try {
