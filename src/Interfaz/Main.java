@@ -15,24 +15,8 @@ public class Main{
         int seleccion=e1.getSeleccion();
         Moneda ms= m2.getMs();
 
-        PanelComprador n =new PanelComprador();
+        PanelComprador n =new PanelComprador(ms, seleccion, expendedor);
         PanelPrincipal p =new PanelPrincipal(n,e1, m2);
-
-        Comprador comprador=new Comprador(ms,seleccion,expendedor);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
