@@ -52,7 +52,7 @@ public class PanelMoneda extends JPanel {
         this.add(moneda500);
         this.add(moneda1000);
         this.add(moneda1500);
-        
+
         grupo.add(moneda100);
         grupo.add(moneda500);
         grupo.add(moneda1000);
@@ -85,6 +85,10 @@ public class PanelMoneda extends JPanel {
             radioButton.add(imageLabel);
         }
         return radioButton;
+    }
+
+    public Moneda getMs(){
+        return ms;
     }
 }
 
