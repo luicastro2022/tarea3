@@ -31,34 +31,16 @@ public class PanelComprador extends JPanel{
 
         JButton Vuelto = new JButton("Sacar vuelto");
         this.add(Vuelto);
-        Vuelto.addMouseListener(new escucharmouse());
+        Vuelto.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
     }
 
-    private class escucharmouse implements MouseListener{
-        @Override
-        public void mouseClicked(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mousePressed(MouseEvent e) {
-
-
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseExited(MouseEvent e) {
-
-        }
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
     }
 }

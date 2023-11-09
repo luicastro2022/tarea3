@@ -78,7 +78,8 @@ public class PanelExpendedor extends JPanel{
         this.setSize(800, 600);
     }
 
-    public int getSeleccion() {
-        return seleccion;
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
     }
 }
