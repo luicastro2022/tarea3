@@ -195,16 +195,17 @@ public class Expendedor {
         if (n == SNICKER && m != null && x >= Precios.PrecioSnicker.getPrecio()) {
             Dulce sn = snicker.getDulce();
             if (sn != null) {
-                int m50 = (x - Precios.PrecioSnicker.getPrecio()) / 50;
-                x = x - 50 * m50;
-                int m100 = (x - Precios.PrecioSnicker.getPrecio()) / 100;
-                x = x - 100 * m100;
-                int m500 = (x - Precios.PrecioSnicker.getPrecio()) / 500;
-                x = x - 500 * m500;
-                int m1000 = (x - Precios.PrecioSnicker.getPrecio()) / 1000;
-                x = x - 1000 * m1000;
                 int m1500 = (x - Precios.PrecioSnicker.getPrecio()) / 1500;
                 x = x - 1500 * m1500;
+                int m1000 = (x - Precios.PrecioSnicker.getPrecio()) / 1000;
+                x = x - 1000 * m1000;
+                int m500 = (x - Precios.PrecioSnicker.getPrecio()) / 500;
+                x = x - 500 * m500;
+                int m100 = (x - Precios.PrecioSnicker.getPrecio()) / 100;
+                x = x - 100 * m100;
+                int m50 = (x - Precios.PrecioSnicker.getPrecio()) / 50;
+                x = x - 50 * m50;
+
 
                 for (int i = 0; i < m50; i++) {monVu.addMoneda(new Moneda50());}
                 for (int i = 0; i < m100; i++) {monVu.addMoneda(new Moneda100());}
@@ -222,16 +223,20 @@ public class Expendedor {
         else if (n == SUPER8 && m != null && x >= Precios.PrecioSuper8.getPrecio()){
             Dulce s8=super8.getDulce();
             if (s8 != null) {
-                int m50 = (x - Precios.PrecioSuper8.getPrecio()) / 50;
-                x = x - 50 * m50;
-                int m100 = (x - Precios.PrecioSuper8.getPrecio()) / 100;
-                x = x - 100 * m100;
-                int m500 = (x - Precios.PrecioSuper8.getPrecio()) / 500;
-                x = x - 500 * m500;
-                int m1000 = (x - Precios.PrecioSuper8.getPrecio()) / 1000;
-                x = x - 1000 * m1000;
                 int m1500 = (x - Precios.PrecioSuper8.getPrecio()) / 1500;
                 x = x - 1500 * m1500;
+                int m1000 = (x - Precios.PrecioSuper8.getPrecio()) / 1000;
+                x = x - 1000 * m1000;
+                int m500 = (x - Precios.PrecioSuper8.getPrecio()) / 500;
+                x = x - 500 * m500;
+                int m100 = (x - Precios.PrecioSuper8.getPrecio()) / 100;
+                x = x - 100 * m100;
+                int m50 = (x - Precios.PrecioSuper8.getPrecio()) / 50;
+                x = x - 50 * m50;
+
+
+
+
 
                 for (int i = 0; i < m50; i++) {monVu.addMoneda(new Moneda50());}
                 for (int i = 0; i < m100; i++) {monVu.addMoneda(new Moneda100());}
