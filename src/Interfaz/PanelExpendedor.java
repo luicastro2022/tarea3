@@ -14,6 +14,7 @@ import java.awt.event.MouseListener;
 
 public class PanelExpendedor extends JPanel{
     int seleccion=1;
+    int seleccion2=1;
     Expendedor e;
     public PanelExpendedor() {
         super();
@@ -85,7 +86,8 @@ public class PanelExpendedor extends JPanel{
         moneda100.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                seleccion2=1;
+                opcion2.setText("100 pesos");
             }
         });
 
@@ -94,25 +96,28 @@ public class PanelExpendedor extends JPanel{
         moneda500.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                seleccion2=2;
+                opcion2.setText("500 pesos");
             }
         });
 
         JButton moneda1000=new JButton("1000");
         this.add(moneda1000);
-        moneda500.addMouseListener(new EscucharMouse() {
+        moneda1000.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                seleccion2=3;
+                opcion2.setText("1000 pesos");
             }
         });
 
         JButton moneda1500=new JButton("1500");
         this.add(moneda1500);
-        moneda500.addMouseListener(new EscucharMouse() {
+        moneda1500.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                seleccion2=4;
+                opcion2.setText("1500 pesos");
             }
         });
 
