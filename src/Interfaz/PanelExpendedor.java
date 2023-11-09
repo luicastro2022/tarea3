@@ -13,9 +13,11 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelExpendedor extends JPanel{
-    int seleccion=1;
-    int seleccion2=1;
-    Expendedor e;
+    private int seleccion=1;
+    private int seleccion2=1;
+    private Expendedor e;
+    private Moneda ms;
+
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 4));
@@ -88,6 +90,7 @@ public class PanelExpendedor extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 seleccion2=1;
                 opcion2.setText("100 pesos");
+                ms=new Moneda100();
             }
         });
 
@@ -98,6 +101,7 @@ public class PanelExpendedor extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 seleccion2=2;
                 opcion2.setText("500 pesos");
+                ms=new Moneda500();
             }
         });
 
@@ -108,6 +112,7 @@ public class PanelExpendedor extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 seleccion2=3;
                 opcion2.setText("1000 pesos");
+                ms=new Moneda1000();
             }
         });
 
@@ -118,34 +123,39 @@ public class PanelExpendedor extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 seleccion2=4;
                 opcion2.setText("1500 pesos");
+                ms=new Moneda1500();
             }
         });
 
-
-
-
-
-
         this.setSize(800, 600);
     }
-
-
-
-
-
-
 
 
     public int getSelecceion() {
         return seleccion;
     }
 
-    public Producto comprar(){
+    public Void comprar() throws Exception {
         if(seleccion==1||seleccion==2||seleccion==3){
-
+            e.comprarBebida(ms,seleccion);
         }
+        else{
+            e.comprarDulce(ms,seleccion);
+        }
+
+
         return null;
     };
+
+    public Producto getseleccion(){
+        if(seleccion==1||seleccion==2||seleccion==3){
+            return e.getBebida();
+        }
+        else{
+            return e.getDulce();
+        }
+    }
+
 
     @Override
     public void paint(Graphics g) {

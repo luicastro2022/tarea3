@@ -1,6 +1,6 @@
 package Codigo;
 
-abstract class Bebida extends Producto{
+public abstract class Bebida extends Producto{
 
     /**
      *
