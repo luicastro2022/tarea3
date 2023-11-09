@@ -27,7 +27,6 @@ public class PanelComprador extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 Producto b=p.getseleccion();
-                System.out.println(b.sonido());
             }
         });
 
@@ -37,6 +36,8 @@ public class PanelComprador extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
+                Moneda m=p.getvuelto();
+                System.out.println(m.getValor());
             }
         });
     }

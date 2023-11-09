@@ -166,6 +166,9 @@ public class PanelExpendedor extends JPanel{
         }
     }
 
+    public Moneda getvuelto(){
+        return e.getVuelto();
+    }
 
     @Override
     public void paint(Graphics g) {
