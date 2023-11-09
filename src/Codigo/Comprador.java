@@ -25,7 +25,8 @@ public class Comprador{
             }
         }
         else if(cualProducto==4 || cualProducto==5){
-            Dulce d = exp.comprarDulce(m, cualProducto);
+            exp.comprarDulce(m, cualProducto);
+            Dulce d=exp.getDulce();
             if(d!=null){
                 sonido = d.comer();
             }

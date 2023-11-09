@@ -19,6 +19,7 @@ public class Expendedor {
      *
      */
     private Bebida bebida;
+    private Dulce dulce;
     private Deposito coca;
     private Deposito sprite;
     private Deposito fanta;
@@ -182,7 +183,7 @@ public class Expendedor {
      * @return si la compra es exitosa devuelve el dulce correspondiente, en caso contrario la moneda como vuelto
      * @throws Exception maneja las excepciones realcionadas al proceso de compra de un prodcuto
      */
-    public Dulce comprarDulce(Moneda m, int n) throws Exception {
+    public Void comprarDulce(Moneda m, int n) throws Exception {
         //si la moneda no es null guardar en x su valor
         int x = 0;
         if (m != null) {
@@ -211,7 +212,7 @@ public class Expendedor {
                 for (int i = 0; i < m1000; i++) {monVu.addMoneda(new Moneda1000());}
                 for (int i = 0; i < m1500; i++) {monVu.addMoneda(new Moneda1500());}
 
-                return sn;
+                dulce=sn;
             }
             else{
                 monVu.addMoneda(m);
@@ -238,7 +239,7 @@ public class Expendedor {
                 for (int i = 0; i < m1000; i++) {monVu.addMoneda(new Moneda1000());}
                 for (int i = 0; i < m1500; i++) {monVu.addMoneda(new Moneda1500());}
 
-                return s8;
+                dulce=s8;
             }
             else{
                 monVu.addMoneda(m);
@@ -250,6 +251,7 @@ public class Expendedor {
             monVu.addMoneda(m);
             throw new PagoInsuficienteException("No hay saldo suficiente para comprar el producto");
         }
+        return null;
     }
 
     /**
@@ -262,5 +264,9 @@ public class Expendedor {
 
     public Bebida getBebida() {
         return bebida;
+    }
+
+    public Dulce getDulce(){
+        return dulce;
     }
 }
