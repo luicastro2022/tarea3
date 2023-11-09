@@ -12,12 +12,11 @@ public class Main{
 
         PanelExpendedor e1=new PanelExpendedor();
         PanelMoneda m2= new PanelMoneda();
-
         int seleccion=e1.getSeleccion();
 
 
         PanelComprador n =new PanelComprador();
-        PanelPrincipal p =new PanelPrincipal(n,e1);
+        PanelPrincipal p =new PanelPrincipal(n,e1, m2);
 
 
 
