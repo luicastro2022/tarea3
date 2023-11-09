@@ -6,10 +6,12 @@ public class Snicker extends Dulce{
     public Snicker(int serie){
         super(serie);
     }
-    /** "sonido" o frase que se obtiene al comer un snicker*/
-    public String comer() {
+
+    @Override
+    public String sonido() {
         return "snicker";
     }
+
     /** getter para obtener el precio de un snicker*/
     public int getprecio(){return Precios.PrecioSnicker.getPrecio();}
 }

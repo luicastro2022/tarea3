@@ -24,8 +24,9 @@ public class PanelPrincipal extends JFrame{
         this.setTitle("Ventana Principal");
         this.getContentPane().setBackground(Color.CYAN);
 
-        c=new PanelComprador();
+
         e=new PanelExpendedor();
+        c=new PanelComprador(e);
         d=new PanelDepositos();
 
         this.add(e,BorderLayout.EAST);

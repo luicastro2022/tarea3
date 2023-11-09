@@ -14,20 +14,20 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelComprador extends JPanel{
-    PanelExpendedor p;
 
-    public PanelComprador(){
+
+    public PanelComprador(PanelExpendedor p){
         super();
         this.setLayout(new GridLayout(1,2));
-        p=new PanelExpendedor();
 
-        JButton comprar = new JButton("Comprar");
-        this.add(comprar);
-        comprar.addMouseListener(new EscucharMouse() {
+
+        JButton sacarProducto = new JButton("Sacar Producto");
+        this.add(sacarProducto);
+        sacarProducto.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
-
+                Producto b=p.getseleccion();
+                System.out.println(b.sonido());
             }
         });
 

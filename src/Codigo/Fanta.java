@@ -12,7 +12,8 @@ public class Fanta extends Bebida{
     /**getter para obtener el precio de fanta*/
     public int getprecio(){return Precios.PrecioFanta.getPrecio();}
     /**"sonido" que se hace al beber una fanta*/
-    public String beber() {
+    @Override
+    public String sonido() {
         return "Fanta";
     }
 }

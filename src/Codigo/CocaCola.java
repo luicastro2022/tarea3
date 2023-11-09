@@ -16,7 +16,8 @@ class CocaCola extends Bebida{
      *
      * @return devuelve el string identificador del producto
      */
-    public String beber(){
+    @Override
+    public String sonido() {
         return "cocacola";
     }
 }

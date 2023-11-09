@@ -127,13 +127,23 @@ public class PanelExpendedor extends JPanel{
             }
         });
 
+        JButton comprar=new JButton("comprar");
+        this.add(comprar);
+        comprar.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                try {
+                    comprar();
+                    getseleccion();
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
         this.setSize(800, 600);
     }
 
-
-    public int getSelecceion() {
-        return seleccion;
-    }
 
     public Void comprar() throws Exception {
         if(seleccion==1||seleccion==2||seleccion==3){

@@ -9,10 +9,5 @@ abstract class Dulce extends Producto{
         super(serie);
     }
 
-    /**
-     *
-     * @return devuelve el string identificador del dulce en cuestion
-     */
-    public abstract String comer();
-    public abstract int getprecio();
+
 }

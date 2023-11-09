@@ -12,7 +12,8 @@ class Sprite extends Bebida{
     /** getter para obtener el precio de Sprite*/
     public int getprecio(){return Precios.PrecioSprite.getPrecio();}
     /** "sonido" que se hace al beber una sprite*/
-    public String beber(){
-        return "sprite";
+    @Override
+    public String sonido() {
+        return "Sprite";
     }
 }

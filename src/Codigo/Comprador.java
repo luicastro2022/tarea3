@@ -18,7 +18,7 @@ public class Comprador{
             exp.comprarBebida(m,cualProducto);
             Bebida b = exp.getBebida();
             if (b != null) {
-                sonido = b.beber();
+                sonido = b.sonido();
             }
             else{
                 System.out.println("no se pudo efectuar la compra");
@@ -28,7 +28,7 @@ public class Comprador{
             exp.comprarDulce(m, cualProducto);
             Dulce d=exp.getDulce();
             if(d!=null){
-                sonido = d.comer();
+                sonido = d.sonido();
             }
             else{
                 System.out.println("no se pudo efectuar la compra");

@@ -1,7 +1,7 @@
 package Codigo;
 
 /** Clase para identificar todos los productos disponibles*/
-public class Producto {
+public abstract class Producto {
     /** valor que identifica cada producto creado*/
     private int serie;
     /** constructor de producto que recibe el numero de serie de un producto*/
@@ -12,4 +12,6 @@ public class Producto {
     public int getSerie() {
         return serie;
     }
+
+    public abstract String sonido();
 }

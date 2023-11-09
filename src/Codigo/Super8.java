@@ -12,10 +12,11 @@ public class Super8 extends Dulce{
         super(serie);
     }
 
-    /** "sonido" que se hace al comer un super 8*/
-    public String comer() {
-        return "super8";
+    @Override
+    public String sonido() {
+        return "Super8";
     }
+
     /** getter para obtener el precio de super8*/
     public int getprecio(){return Precios.PrecioSuper8.getPrecio();}
 }
