@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+
 /**
  * Panel que representa al Expendedor en la interfaz
  * Contiene 5 Botones que representan los productos
@@ -18,6 +19,7 @@ public class PanelExpendedor extends JPanel{
         super();
         this.setLayout(new GridLayout(3, 2));
         JTextField opcion=new JTextField(" ");
+
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);

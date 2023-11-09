@@ -19,7 +19,7 @@ public class PanelComprador extends JPanel{
         super();
         this.setLayout(new GridLayout(1,2));
 
-        JButton comprar = new JButton("comprar");
+        JButton comprar = new JButton("Comprar");
         this.add(comprar);
         comprar.addMouseListener(new EscucharMouse() {
             @Override
