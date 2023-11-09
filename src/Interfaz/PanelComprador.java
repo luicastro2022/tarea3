@@ -26,7 +26,7 @@ public class PanelComprador extends JPanel{
         comprar.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                p.getSeleccion();
+
 
             }
         });

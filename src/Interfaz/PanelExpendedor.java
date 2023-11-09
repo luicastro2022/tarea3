@@ -17,8 +17,11 @@ public class PanelExpendedor extends JPanel{
     Expendedor e;
     public PanelExpendedor() {
         super();
-        this.setLayout(new GridLayout(3, 2));
+        this.setLayout(new GridLayout(3, 4));
         JTextField opcion=new JTextField(" ");
+        JTextField opcion2=new JTextField( " ");
+        JTextField opcion3=new JTextField(" ");
+
         e=new Expendedor(4);
 
         JButton cocacola = new JButton("CocaCola");
@@ -73,12 +76,51 @@ public class PanelExpendedor extends JPanel{
             }
         });
 
-        JButton mon
-
-
-
-
         this.add(opcion);
+        this.add(opcion2);
+        this.add(opcion3);
+
+        JButton moneda100= new JButton("100");
+        this.add(moneda100);
+        moneda100.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
+
+        JButton moneda500=new JButton("500");
+        this.add(moneda500);
+        moneda500.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
+
+        JButton moneda1000=new JButton("1000");
+        this.add(moneda1000);
+        moneda500.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
+
+        JButton moneda1500=new JButton("1500");
+        this.add(moneda1500);
+        moneda500.addMouseListener(new EscucharMouse() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+        });
+
+
+
+
+
+
         this.setSize(800, 600);
     }
 
@@ -89,7 +131,7 @@ public class PanelExpendedor extends JPanel{
 
 
 
-    public int getSeleccion() {
+    public int getSelecceion() {
         return seleccion;
     }
 

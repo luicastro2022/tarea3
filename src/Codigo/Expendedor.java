@@ -259,4 +259,8 @@ public class Expendedor {
     public Moneda getVuelto () {
         return monVu.getMoneda();
     }
+
+    public Bebida getBebida() {
+        return bebida;
+    }
 }

@@ -15,7 +15,8 @@ public class Comprador{
         vuelto = 0;
 
         if(cualProducto==1 || cualProducto==2 || cualProducto==3) {
-            Bebida b = exp.comprarBebida(m, cualProducto);
+            exp.comprarBebida(m,cualProducto);
+            Bebida b = exp.getBebida();
             if (b != null) {
                 sonido = b.beber();
             }
