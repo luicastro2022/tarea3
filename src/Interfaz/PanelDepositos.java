@@ -7,6 +7,8 @@ public class PanelDepositos extends JPanel {
         
     }
 
-
-
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+    }
 }
