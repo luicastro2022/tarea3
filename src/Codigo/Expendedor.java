@@ -16,7 +16,9 @@ public class Expendedor {
     /**
      * creacion de los depositos
      *
+     *
      */
+    private Bebida bebida;
     private Deposito coca;
     private Deposito sprite;
     private Deposito fanta;
@@ -60,7 +62,7 @@ public class Expendedor {
      * @return  si la compra es exitosa devuelve la bebida sino una moneda que se añade a vuelto
      * @throws Exception maneja las excepciones asociadas al proceso de comprar una bebida
      */
-    public Bebida comprarBebida(Moneda m, int n) throws Exception {
+    public void comprarBebida(Moneda m, int n) throws Exception {
         //si la moneda no es null guardar en x su valor
         int x = 0;
         if (m != null) {
@@ -99,7 +101,7 @@ public class Expendedor {
                     monVu.addMoneda(new Moneda1500());
                 }
 
-                return c;
+                bebida=c;
             } else {
                 monVu.addMoneda(m);
                 throw new NoHayProductoException("No quedan mas unidades de este producto");
@@ -135,7 +137,7 @@ public class Expendedor {
                     monVu.addMoneda(new Moneda1500());
                 }
 
-                return s;
+                bebida=s;
             } else {
                 monVu.addMoneda(m);
                 throw new NoHayProductoException("No quedan mas unidades de este producto");
@@ -160,7 +162,7 @@ public class Expendedor {
                 for (int i = 0; i < m500; i++) {monVu.addMoneda(new Moneda500());}
                 for (int i = 0; i < m1000; i++) {monVu.addMoneda(new Moneda1000());}
                 for (int i = 0; i < m1500; i++) {monVu.addMoneda(new Moneda1500());}
-                return f;
+                bebida=f;
             } else {
                 monVu.addMoneda(m);
                 throw new NoHayProductoException("No quedan más unidades de este producto");

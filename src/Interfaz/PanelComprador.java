@@ -14,17 +14,19 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelComprador extends JPanel{
-
+    PanelExpendedor p;
 
     public PanelComprador(){
         super();
         this.setLayout(new GridLayout(1,2));
+        p=new PanelExpendedor();
 
         JButton comprar = new JButton("Comprar");
         this.add(comprar);
         comprar.addMouseListener(new EscucharMouse() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                p.getSeleccion();
 
             }
         });

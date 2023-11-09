@@ -1,4 +1,6 @@
 package Interfaz;
+import Codigo.Expendedor;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -12,6 +14,9 @@ public class PanelPrincipal extends JFrame{
     private PanelComprador c;
     private PanelExpendedor e;
     private PanelDepositos d;
+
+
+
 
     public PanelPrincipal(){
         super();

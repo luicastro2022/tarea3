@@ -14,12 +14,12 @@ import java.awt.event.MouseListener;
 
 public class PanelExpendedor extends JPanel{
     int seleccion=1;
-
+    Expendedor e;
     public PanelExpendedor() {
         super();
         this.setLayout(new GridLayout(3, 2));
         JTextField opcion=new JTextField(" ");
-
+        e=new Expendedor(4);
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
@@ -73,10 +73,32 @@ public class PanelExpendedor extends JPanel{
             }
         });
 
+        JButton mon
+
+
+
 
         this.add(opcion);
         this.setSize(800, 600);
     }
+
+
+
+
+
+
+
+
+    public int getSeleccion() {
+        return seleccion;
+    }
+
+    public Producto comprar(){
+        if(seleccion==1||seleccion==2||seleccion==3){
+
+        }
+        return null;
+    };
 
     @Override
     public void paint(Graphics g) {
