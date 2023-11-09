@@ -11,6 +11,7 @@ import javax.swing.*;
 public class PanelPrincipal extends JFrame{
     private PanelComprador c;
     private PanelExpendedor e;
+    private PanelDepositos d;
 
     public PanelPrincipal(){
         super();
@@ -18,18 +19,17 @@ public class PanelPrincipal extends JFrame{
         this.setTitle("Ventana Principal");
         this.getContentPane().setBackground(Color.CYAN);
 
-
         c=new PanelComprador();
         e=new PanelExpendedor();
+        d=new PanelDepositos();
+
         this.add(e,BorderLayout.EAST);
         this.add(c,BorderLayout.WEST);
-
+        this.add(d,BorderLayout.CENTER);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000,800);
         this.setVisible(true);
-
-
     }
 
     @Override
