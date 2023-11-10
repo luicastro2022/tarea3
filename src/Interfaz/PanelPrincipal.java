@@ -26,7 +26,7 @@ public class PanelPrincipal extends JFrame{
 
 
         e=new PanelExpendedor();
-        c=new PanelComprador(e);
+        c=new PanelComprador(e,d);
         d=new PanelDepositos(e);
 
         this.add(e,BorderLayout.EAST);

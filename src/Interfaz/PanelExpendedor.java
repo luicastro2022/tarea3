@@ -158,7 +158,7 @@ public class PanelExpendedor extends JPanel{
         else{
             e.comprarDulce(ms,seleccion);
         }
-
+        repaint();
 
         return null;
     };
@@ -193,7 +193,7 @@ public class PanelExpendedor extends JPanel{
     }
     @Override
     public void paint(Graphics g) {
-        super.paint(g);
+
 
     }
 }

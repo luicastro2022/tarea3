@@ -16,7 +16,7 @@ import java.awt.event.MouseListener;
 public class PanelComprador extends JPanel{
 
 
-    public PanelComprador(PanelExpendedor p){
+    public PanelComprador(PanelExpendedor p,PanelDepositos d){
         super();
         this.setLayout(new GridLayout(1,2));
 
@@ -27,6 +27,7 @@ public class PanelComprador extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 Producto b=p.getseleccion();
+                System.out.println(b.sonido());
             }
         });
 
@@ -37,7 +38,7 @@ public class PanelComprador extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 Moneda m=p.getvuelto();
-                System.out.println(m.getValor());
+
             }
         });
     }

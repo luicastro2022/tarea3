@@ -79,7 +79,7 @@ class Deposito{
         return a1.size();
     }
     public int getsizeofDulce(){
-        return a2.size();
+        return a3.size();
     }
 
 }
