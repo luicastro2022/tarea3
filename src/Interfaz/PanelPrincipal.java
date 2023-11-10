@@ -44,6 +44,6 @@ public class PanelPrincipal extends JFrame{
         c.paint(g);
         e.paint(g);
         d.paint(g);
-        d.paint(g);
+
     }
 }
