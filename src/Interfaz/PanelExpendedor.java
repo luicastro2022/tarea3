@@ -10,6 +10,8 @@ import java.awt.event.MouseListener;
  * Panel que representa al Expendedor en la interfaz
  * Contiene 5 Botones que representan los productos
  * El ultimo espacio del grid esta reservado para mostrar la seleccion actual
+ *
+ * aparte de otros 5 botones que se usan para seleccionar las monedas, las cuales tambien tienen un lugar para mostrar que moneda esta seleccionada actaulmente
  */
 
 public class PanelExpendedor extends JPanel{
@@ -152,7 +154,11 @@ public class PanelExpendedor extends JPanel{
         this.setSize(800, 600);
     }
 
-
+    /**
+     * Metodo comprar que ejecuta una compra con los parametros dados para luego guardar la compra con el metodo get seleccion
+     * @return
+     * @throws Exception
+     */
     public Void comprar() throws Exception {
         if(seleccion==1||seleccion==2||seleccion==3){
             e.comprarBebida(ms,seleccion);
@@ -177,6 +183,12 @@ public class PanelExpendedor extends JPanel{
     public Moneda getvuelto(){
         return e.getVuelto();
     }
+
+    /**
+     * Metodos para saber el largo de cada una de las listas de los diferentes productos, esto seria utilizado para la variacion de la representacion de la mauina
+     * pero no se me fue posible conseguir un resultado consistente
+     * @return
+     */
 
     public int getNumprodcoca(){
         return e.getSizeofcoca();

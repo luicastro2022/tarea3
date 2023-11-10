@@ -21,7 +21,7 @@ public class PanelComprador extends JPanel{
         this.setLayout(new GridLayout(2,2));
         this.d=d;
         JTextField articulo=new JTextField();
-        JTextField vuelto =new JTextField();
+
 
 
         JButton sacarProducto = new JButton("Sacar Producto");
@@ -43,6 +43,7 @@ public class PanelComprador extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 Moneda m=p.getvuelto();
+                System.out.println(m.getValor());
 
 
 

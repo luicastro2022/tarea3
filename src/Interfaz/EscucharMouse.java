@@ -3,6 +3,9 @@ package Interfaz;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * La implementacion de la interfaz Mouse listener
+ */
 abstract public class EscucharMouse implements MouseListener {
 
     @Override

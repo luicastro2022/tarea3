@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
+/**
+ * Clase usada para representar los productos en pantalla, cada producto tiene su lista y recibe un PanelExpendedor como parametro
+ */
 public class PanelDepositos extends JPanel {
 
     PanelExpendedor e;

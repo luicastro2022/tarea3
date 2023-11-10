@@ -6,8 +6,9 @@ import javax.swing.*;
 
 /**
  * Clase que contiene a todos los otros paneles
- * c= panel Compraador
- * e= panel Expendedor
+ * c= panel Compraador, es el panel del lado izquierdo y tiene la funcion de "sacar" el producto y el vuelto
+ * e= panel Expendedor, es el panel de la derecha y tiene la funcion de seleccionar la bebida y la moneda a usar
+ * d= panel de los depositos que se mostraran en pantalla
  */
 
 public class PanelPrincipal extends JFrame{
@@ -28,7 +29,9 @@ public class PanelPrincipal extends JFrame{
         e=new PanelExpendedor();
         c=new PanelComprador(e,d);
         d=new PanelDepositos(e);
-
+        /**Los metodos de abajo solo añaden los depositos a la ventana principal
+         *
+         */
         this.add(e,BorderLayout.EAST);
         this.add(c,BorderLayout.WEST);
         this.add(d,BorderLayout.CENTER);
