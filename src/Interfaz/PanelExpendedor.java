@@ -29,6 +29,8 @@ public class PanelExpendedor extends JPanel{
         JTextField opcion4=new JTextField(" ");
         JTextField opcion5=new JTextField(" ");
 
+
+
         e=new Expendedor(numprod);
 
         JButton cocacola = new JButton("CocaCola");
@@ -191,8 +193,12 @@ public class PanelExpendedor extends JPanel{
     public int getNumprodsuper8(){
         return e.getSizeofsuper8();
     }
+
+
+
     @Override
     public void paint(Graphics g) {
+
 
 
     }

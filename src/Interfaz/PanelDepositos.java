@@ -11,15 +11,16 @@ public class PanelDepositos extends JPanel {
         super();
         this.e=e;
         this.setLayout(new GridLayout(5,4));
-        this.setBackground(Color.WHITE);
+        this.setBackground(Color.PINK);
 
     }
-
-
     public void paint(Graphics g) {
         super.paint(g);
         revalidate();
         g.setColor(Color.BLACK);
+        g.clearRect(270,50,260,600);
+
+
         for(int i=0;i<e.getNumprodcoca();i++){
             int offset=60*i;
             g.fillRect(280+offset,60,45,70);

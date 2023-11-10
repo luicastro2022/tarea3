@@ -14,11 +14,14 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelComprador extends JPanel{
-
+    PanelDepositos d;
 
     public PanelComprador(PanelExpendedor p,PanelDepositos d){
         super();
-        this.setLayout(new GridLayout(1,2));
+        this.setLayout(new GridLayout(2,2));
+        this.d=d;
+        JTextField articulo=new JTextField();
+        JTextField vuelto =new JTextField();
 
 
         JButton sacarProducto = new JButton("Sacar Producto");
@@ -27,7 +30,9 @@ public class PanelComprador extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 Producto b=p.getseleccion();
-                System.out.println(b.sonido());
+                articulo.setText(b.sonido());
+
+
             }
         });
 
@@ -39,9 +44,15 @@ public class PanelComprador extends JPanel{
                 super.mouseClicked(e);
                 Moneda m=p.getvuelto();
 
+
+
             }
         });
+
+        this.add(articulo);
     }
+
+
 
     @Override
     public void paint(Graphics g) {

@@ -22,7 +22,7 @@ public class PanelPrincipal extends JFrame{
         super();
         this.setLayout(new BorderLayout());
         this.setTitle("Ventana Principal");
-        this.getContentPane().setBackground(Color.CYAN);
+        this.getContentPane().setBackground(Color.PINK);
 
 
         e=new PanelExpendedor();
