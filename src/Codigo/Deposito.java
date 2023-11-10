@@ -75,6 +75,11 @@ class Deposito{
             return m;
         }
     }
-
+    public int getsizeofBebida(){
+        return a1.size();
+    }
+    public int getsizeofDulce(){
+        return a2.size();
+    }
 
 }

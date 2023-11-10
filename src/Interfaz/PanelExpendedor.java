@@ -13,8 +13,10 @@ import java.awt.event.MouseListener;
  */
 
 public class PanelExpendedor extends JPanel{
+    private int numprod=4;
     private int seleccion=1;
     private int seleccion2=1;
+
     private Expendedor e;
     private Moneda ms;
 
@@ -24,8 +26,10 @@ public class PanelExpendedor extends JPanel{
         JTextField opcion=new JTextField(" ");
         JTextField opcion2=new JTextField( " ");
         JTextField opcion3=new JTextField(" ");
+        JTextField opcion4=new JTextField(" ");
+        JTextField opcion5=new JTextField(" ");
 
-        e=new Expendedor(4);
+        e=new Expendedor(numprod);
 
         JButton cocacola = new JButton("CocaCola");
         this.add(cocacola);
@@ -82,6 +86,8 @@ public class PanelExpendedor extends JPanel{
         this.add(opcion);
         this.add(opcion2);
         this.add(opcion3);
+        this.add(opcion4);
+        this.add(opcion5);
 
         JButton moneda100= new JButton("100");
         this.add(moneda100);
@@ -170,6 +176,21 @@ public class PanelExpendedor extends JPanel{
         return e.getVuelto();
     }
 
+    public int getNumprodcoca(){
+        return e.getSizeofcoca();
+    }
+    public int getNumprodsprite(){
+        return e.getSizeofsprite();
+    }
+    public int getNumprodfanta(){
+        return e.getSizeoffanta();
+    }
+    public int getNumprodsnicker(){
+        return e.getSizeofsnicker();
+    }
+    public int getNumprodsuper8(){
+        return e.getSizeofsuper8();
+    }
     @Override
     public void paint(Graphics g) {
         super.paint(g);

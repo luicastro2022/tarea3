@@ -27,7 +27,7 @@ public class PanelPrincipal extends JFrame{
 
         e=new PanelExpendedor();
         c=new PanelComprador(e);
-        d=new PanelDepositos();
+        d=new PanelDepositos(e);
 
         this.add(e,BorderLayout.EAST);
         this.add(c,BorderLayout.WEST);
@@ -43,6 +43,7 @@ public class PanelPrincipal extends JFrame{
         super.paint(g);
         c.paint(g);
         e.paint(g);
+        d.paint(g);
         d.paint(g);
     }
 }

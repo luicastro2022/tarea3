@@ -20,11 +20,13 @@ public class Expendedor {
      */
     private Bebida bebida;
     private Dulce dulce;
+
     private Deposito coca;
     private Deposito sprite;
     private Deposito fanta;
     private Deposito snicker;
     private Deposito super8;
+
 
     private Deposito monVu;
 
@@ -273,5 +275,25 @@ public class Expendedor {
 
     public Dulce getDulce(){
         return dulce;
+    }
+
+    public int getSizeofcoca(){
+        return coca.getsizeofBebida();
+    }
+
+    public int getSizeofsprite(){
+        return sprite.getsizeofBebida();
+    }
+
+    public int getSizeoffanta(){
+        return sprite.getsizeofBebida();
+    }
+
+    public int getSizeofsnicker(){
+        return sprite.getsizeofDulce();
+    }
+
+    public int getSizeofsuper8(){
+        return sprite.getsizeofDulce();
     }
 }
